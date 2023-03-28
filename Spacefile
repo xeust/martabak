@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: martabak
+    src: .
+    engine: python3.9
+    primary: true
+    public_routes:
+      - "/*"
+    presets:
+      env:
+        - name: WEBCRATE_KEY
+          description: "here's how you connect to webcrate"
+          default: "bla bla"

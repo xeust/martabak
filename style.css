@@ -4,7 +4,7 @@ body {
     text-rendering: optimizeLegibility;
     line-height: 1.5;
     font-size: 1rem;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #16171a;
     height: 100vh;
     padding-left: 15px;
@@ -86,7 +86,7 @@ ul {
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: transparent;
     height: 50px;
     width: 100%; /* Full width */
     align-items: center;
@@ -131,6 +131,7 @@ ul {
     flex-direction: column;
     padding-bottom: 15px;
     width: 100%;
+    height: calc(100vh - 50px);
     overflow-y: scroll;
 }
 
@@ -153,7 +154,7 @@ ul {
     font-size: 12px;
     border: 1px solid #d3d3d3;
     color: #262626;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 0.25rem;
     height: 30px;
     width: 50px;
@@ -167,12 +168,14 @@ ul {
     cursor: pointer;
 }
 
-.hljs {
-    background-color: #ffffff;
-    font-family: monospace;
-    font-size: 16px;
-    padding: 0;
-    overflow-x: unset;
+.CodeMirror {
+    height: auto;
+    font-family: Roboto Mono, Courier, monospace;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .wrapper {
