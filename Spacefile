@@ -12,3 +12,6 @@ micros:
         - name: WEBCRATE_KEY
           description: "here's how you connect to webcrate"
           default: "bla bla"
+        - name: LINK_KEY
+          description: "here's the key of the individual link"
+          default: "bla bla"
