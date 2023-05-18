@@ -17,6 +17,3 @@ micros:
         - name: LINK_ID
           description: "the id of the WebCrate link with the note you want"
           default: "bla bla"
-        - name: LINK_KEY
-          description: "here's the key of the individual link"
-          default: "bla bla"
