@@ -4,10 +4,20 @@ micros:
     - name: fastapi
       src: fastapi
       engine: python3.9
-      dev: uvicorn main:app
+      dev: uvicorn main:app  --reload
       run: uvicorn main:app
       path: api
     - name: svelte
       src: svelte
       engine: svelte-kit
       primary: true
+      presets:
+        env:
+          - name: BLACKHOLE_URL
+            description: your blackhole instance url
+            default: "deta is cool"
+          - name: BLACKHOLE_DATA_KEY
+            description: your blackhole data key
+            default: "deta is cool"
+      public_routes:
+        - "/"
